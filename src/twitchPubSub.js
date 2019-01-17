@@ -96,7 +96,7 @@ TwitchPubSub.prototype.reconnect = async function() {
         let subscription = this.subscriptions[i];
         this.subscribe(
             subscription.types,
-            subscription.dataId,
+            subscription.id,
             subscription.authToken,
             true
         );
